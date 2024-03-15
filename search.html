@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>NETMOV</title>
+ <link rel="stylesheet" href="./normalize.css">
+ <link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="./spinner.css">
+ <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+ <script defer src="./script.js"></script>
+</head>
+<body>
+<nav class="nav">
+ <div class="nav-center">
+  <div class="nav-header">
+      <a href="/" class="nav-logo">NETMOV</a>
+  </div>
+  <ul class="nav-links">
+   <li><a href="/index.html">Movies</a></li>
+   <li><a href="/Tv-shows.html">TV shows</a></li>
+  </ul>
+ </div>
+</nav>
+
+<section class="search">
+  <div class="search-container">
+    <div class="alert"></div>
+    <form action="./search.html" class="form">
+   <div class="form-control-container">
+    
+     <input type="radio" name="type" value="movie" class="form-input" id="movie" checked>
+     <label for="movies">Movies</label>
+     <input type="radio"  name="type" value="tv" class="form-input" id="tv">
+     <label for="TV">TV shows</label>
+   </div>
+   <div class="search-input">
+    <input type="text" placeholder="search"  id="search-term"   name="search-term" class="main-search-input">
+    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+   </div>
+  </form>
+ </div>
+</section>
+<!-- end of search section== -->
+<section class="popular-movies section-center">
+  <div class="search-result-heading"></div>
+  <div class="card-container">
+  </div>
+</section>
+<!-- end of serch movies== -->
+     <div id="pagination">
+        <!-- <div class="pagination">
+          <button class="btn btn-primary" id="prev">Prev</button>
+          <button class="btn btn-primary" id="next">Next</button>
+          <div class="page-counter">Page 1 of 5</div>
+        </div> -->
+      </div>
+
+<footer class="footer">
+ <div class="footer-container">
+  <h2 class="nav-logo">NETMOV</h2>
+<ul class="footer-link">
+ <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+ <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+ </div>
+</footer>
+<div class="spinner"></div>
+</body>
+</html>
