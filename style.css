@@ -251,14 +251,21 @@ color: red;
 .cards:hover{
   transform: scale(1.04);
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:640px) {
   .card-container{
     display: grid;
    grid-template-columns: 1fr 1fr ;
    column-gap: 1rem;
   }
 }
-@media screen and (min-width:990px) {
+@media screen and (min-width:768px) {
+  .card-container{
+    display: grid;
+   grid-template-columns: repeat(3,1fr) ;
+   column-gap: 1rem;
+  }
+}
+@media screen and (min-width:1024px) {
   .card-container{
     display: grid;
    grid-template-columns: repeat(4,1fr) ;
@@ -276,14 +283,21 @@ color: red;
 .upcomingcards:hover{
   transform: scale(1.04);
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:640px) {
   .upcomingcards-container{
     display: grid;
    grid-template-columns: 1fr 1fr ;
    column-gap: 1rem;
   }
 }
-@media screen and (min-width:990px) {
+@media screen and (min-width:768px) {
+ .upcomingcards-container{
+    display: grid;
+   grid-template-columns: repeat(3,1fr) ;
+   column-gap: 1rem;
+  }
+}
+@media screen and (min-width:1024px) {
  .upcomingcards-container{
     display: grid;
    grid-template-columns: repeat(4,1fr) ;
@@ -331,7 +345,7 @@ margin:2rem 1rem
 .back-home-btn:hover{
 background: var(--primary-300);
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width:1024px) {
   .movie-details-container{
   display: grid;
   grid-template-columns: auto 1fr;
@@ -383,7 +397,7 @@ background-color: var(--primary-300);
 .fa-star {
 color: orange;
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:648px) {
   .show-name{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -412,7 +426,7 @@ color: orange;
 /* ================ */
 /* tv details-=== */
 /* ================== */
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1024px) {
   .show-name-details{
     display: grid;
     grid-template-columns: auto 1fr;
